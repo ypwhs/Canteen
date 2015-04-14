@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E1E1" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/zhaopin_head"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/head" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/zhaopin_head"
+        android:layout_alignTop="@+id/zhaopin_head"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/zhaopin_head"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/zhaopin_gongsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Company"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/zhaopin_xinxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/zhaopin_gongsi"
+            android:layout_below="@+id/zhaopin_gongsi"
+            android:text="Message"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

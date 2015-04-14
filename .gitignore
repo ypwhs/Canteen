@@ -1,0 +1,13 @@
+*.log
+*.index
+*.class
+*.cache
+*.ini
+.metadata
+.plugins
+.lock
+*.DS_Store
+*.dex
+*/bin
+*/gen
+test
