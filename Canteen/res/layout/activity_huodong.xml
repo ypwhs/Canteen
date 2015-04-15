@@ -7,10 +7,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:background="#FFFFFF" >
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -54,7 +54,7 @@
             android:text="活动时间    5月2号  PM 6:00\n活动地址    北京工商大学教学区操场"
             android:textColor="#535151"
             android:textSize="12sp" />
-        
+
         <TextView
             android:id="@+id/huodong_limit"
             android:layout_width="wrap_content"
@@ -66,28 +66,28 @@
             android:text="限制30人"
             android:textColor="#FF7275"
             android:textSize="12sp" />
-        
+
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_below="@+id/huodong_limit"
             android:layout_marginTop="8dp" />
-        
+
         <TextView
             android:id="@+id/huodong_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/huodong_yue"
             android:layout_alignTop="@+id/huodong_limit"
-            android:text="已参与20人"
+            android:text="已参与12人"
             android:textColor="#FF7275"
             android:textSize="12sp" />
-        
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/huodong_now"
             android:layout_above="@+id/huodong_now"
+            android:layout_alignRight="@+id/huodong_now"
             android:src="@drawable/huodong_heart"
             android:text="" />
 
@@ -96,8 +96,8 @@
             android:layout_width="60dp"
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp"
             android:layout_alignTop="@+id/huodong_name"
+            android:layout_marginRight="16dp"
             android:background="@drawable/huodong_yue"
             android:text="" />
 
@@ -109,7 +109,6 @@
             android:layout_alignLeft="@+id/huodong_name"
             android:text="今天 3:45"
             android:textSize="12sp" />
-
     </RelativeLayout>
 
 </RelativeLayout>

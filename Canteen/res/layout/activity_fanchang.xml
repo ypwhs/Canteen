@@ -17,7 +17,7 @@
         android:layout_toRightOf="@+id/button1"
         android:onClick="add2"
         android:text="招聘" />
-    
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"

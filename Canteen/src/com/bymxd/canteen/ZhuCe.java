@@ -3,11 +3,11 @@ package com.bymxd.canteen;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class Reg extends Activity {
+public class ZhuCe extends Activity {
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reg);
+        setContentView(R.layout.activity_denglu);
 
     }
 	

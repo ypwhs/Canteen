@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="Company"
+            android:text="北京工商大学"
             android:textSize="16sp" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/zhaopin_gongsi"
             android:layout_below="@+id/zhaopin_gongsi"
-            android:text="Message"
+            android:text="招聘职位: 程序员(20人)"
             android:textSize="16sp" />
     </RelativeLayout>
 

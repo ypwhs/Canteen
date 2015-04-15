@@ -2,10 +2,16 @@
 <lint>
     <issue id="ContentDescription">
         <ignore path="res/layout/activity_cai.xml" />
+        <ignore path="res/layout/activity_huodong.xml" />
     </issue>
     <issue id="HardcodedText">
         <ignore path="res/layout/activity_cai.xml" />
+        <ignore path="res/layout/activity_denglu.xml" />
+        <ignore path="res/layout/activity_fanchang.xml" />
+        <ignore path="res/layout/activity_huodong.xml" />
         <ignore path="res/layout/activity_reg.xml" />
+        <ignore path="res/layout/activity_reg.xml" />
+        <ignore path="res/layout/activity_zhaopin.xml" />
         <ignore path="res/layout/fragment_main.xml" />
     </issue>
 </lint>
