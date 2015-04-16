@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E1E1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/huodong_head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/huodong_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/huodong_head"
+            android:text="Name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/huodong_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/huodong_head"
+            android:layout_below="@+id/huodong_head"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="活动内容活动内容活动内容"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/huodong_acttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/huodong_head"
+            android:layout_below="@+id/huodong_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="48dp"
+            android:text="活动时间    5月2号  PM 6:00\n活动地址    北京工商大学教学区操场"
+            android:textColor="#535151"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/huodong_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/huodong_head"
+            android:layout_below="@+id/huodong_acttime"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:text="限制30人"
+            android:textColor="#FF7275"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/huodong_limit"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/huodong_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/huodong_yue"
+            android:layout_alignTop="@+id/huodong_limit"
+            android:text="已参与12人"
+            android:textColor="#FF7275"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/huodong_now"
+            android:layout_alignRight="@+id/huodong_now"
+            android:src="@drawable/huodong_heart"
+            android:text="" />
+
+        <Button
+            android:id="@+id/huodong_yue"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/huodong_name"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/huodong_yue"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/huodong_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/huodong_head"
+            android:layout_alignLeft="@+id/huodong_name"
+            android:text="今天 3:45"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/yangpeiwen/Desktop/Canteen/canteen/src/main/res/layout/card_huodong.xml -->
