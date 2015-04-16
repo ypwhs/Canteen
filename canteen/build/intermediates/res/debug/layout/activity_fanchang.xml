@@ -26,7 +26,8 @@
         android:onClick="add3"
         android:text="活动" />
 
-    <ScrollView
+    <com.gc.materialdesign.views.ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,7 +42,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
         </LinearLayout>
-    </ScrollView>
+    </com.gc.materialdesign.views.ScrollView>
 
     <Button
         android:id="@+id/button4"
