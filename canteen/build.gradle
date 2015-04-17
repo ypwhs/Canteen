@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir:'ilbs',include:['*.jar'])
+    compile fileTree(dir: 'ilbs', include: ['*.jar'])
     compile 'de.hdodenhof:circleimageview:1.2.2'
     compile 'com.soundcloud.android:android-crop:0.9.10@aar'
     compile 'com.github.navasmdc:MaterialDesign:1.+@aar'

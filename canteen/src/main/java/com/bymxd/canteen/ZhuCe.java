@@ -4,11 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class ZhuCe extends Activity {
-	@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_denglu);
 
     }
-	
+
 }

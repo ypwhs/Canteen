@@ -16,11 +16,11 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    
-	<style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
-		<item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
-		<item name="android:minHeight">53dip</item>
-  		<item name="android:maxHeight">53dip</item>
-	</style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
+        <item name="android:minHeight">53dip</item>
+        <item name="android:maxHeight">53dip</item>
+    </style>
 
 </resources>

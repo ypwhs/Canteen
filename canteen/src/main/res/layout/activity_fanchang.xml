@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="add"
-        android:text="菜" />
+        android:text="菜"/>
 
     <Button
         android:id="@+id/button2"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/button1"
         android:onClick="add2"
-        android:text="招聘" />
+        android:text="招聘"/>
 
     <Button
         android:id="@+id/button3"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/button2"
         android:onClick="add3"
-        android:text="活动" />
+        android:text="活动"/>
 
     <com.gc.materialdesign.views.ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -34,13 +34,13 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/button1"
         android:layout_marginBottom="8dp"
-        android:scrollbars="vertical" >
+        android:scrollbars="vertical">
 
         <LinearLayout
             android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
         </LinearLayout>
     </com.gc.materialdesign.views.ScrollView>
 
@@ -51,6 +51,6 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/button3"
         android:onClick="add4"
-        android:text="购物车" />
+        android:text="购物车"/>
 
 </RelativeLayout>

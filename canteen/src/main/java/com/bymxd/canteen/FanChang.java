@@ -12,57 +12,57 @@ import android.widget.TextView;
 
 @SuppressLint("InflateParams")
 public class FanChang extends Activity {
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_fanchang);
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fanchang);
+    }
 
-	int i = 0;
+    int i = 0;
 
-	public void add(View view) {
-		View v = LayoutInflater.from(this).inflate(R.layout.card_cai, null);
-		LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
-		relativeLayout.addView(v);
+    public void add(View view) {
+        View v = LayoutInflater.from(this).inflate(R.layout.card_cai, null);
+        LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
+        relativeLayout.addView(v);
 
-		Button button = (Button) v.findViewById(R.id.cai_button_add);
-		button.setTag(i);
-		TextView textView = (TextView) v.findViewById(R.id.cai_price);
-		textView.setText(String.valueOf(i));
-		i++;
-	}
+        Button button = (Button) v.findViewById(R.id.cai_button_add);
+        button.setTag(i);
+        TextView textView = (TextView) v.findViewById(R.id.cai_price);
+        textView.setText(String.valueOf(i));
+        i++;
+    }
 
-	public void add2(View view) {
-		View v = LayoutInflater.from(this).inflate(R.layout.card_zhaopin, null);
-		LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
-		relativeLayout.addView(v);
+    public void add2(View view) {
+        View v = LayoutInflater.from(this).inflate(R.layout.card_zhaopin, null);
+        LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
+        relativeLayout.addView(v);
 
-		TextView textView = (TextView) v.findViewById(R.id.zhaopin_gongsi);
-		textView.setText("Company" + String.valueOf(i));
-		i++;
-	}
+        TextView textView = (TextView) v.findViewById(R.id.zhaopin_gongsi);
+        textView.setText("Company" + String.valueOf(i));
+        i++;
+    }
 
-	public void add3(View view) {
-		View v = LayoutInflater.from(this).inflate(R.layout.card_huodong, null);
-		LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
-		relativeLayout.addView(v);
+    public void add3(View view) {
+        View v = LayoutInflater.from(this).inflate(R.layout.card_huodong, null);
+        LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
+        relativeLayout.addView(v);
 
-		TextView textView = (TextView) v.findViewById(R.id.huodong_name);
-		textView.setText("Name" + String.valueOf(i));
-		i++;
-	}
+        TextView textView = (TextView) v.findViewById(R.id.huodong_name);
+        textView.setText("Name" + String.valueOf(i));
+        i++;
+    }
 
-	public void add4(View view) {
-		View v = LayoutInflater.from(this).inflate(R.layout.card_gouwuche, null);
-		LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
-		relativeLayout.addView(v);
+    public void add4(View view) {
+        View v = LayoutInflater.from(this).inflate(R.layout.card_gouwuche, null);
+        LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.layout1);
+        relativeLayout.addView(v);
 
-		TextView textView = (TextView) v.findViewById(R.id.gouwuche_name);
-		textView.setText("Name" + String.valueOf(i));
-		i++;
-	}
+        TextView textView = (TextView) v.findViewById(R.id.gouwuche_name);
+        textView.setText("Name" + String.valueOf(i));
+        i++;
+    }
 
-	public void cai_add(View v) {
-		new AlertDialog.Builder(this).setMessage(String.valueOf(v.getTag())).setPositiveButton("确定", null).show();
-	}
+    public void cai_add(View v) {
+        new AlertDialog.Builder(this).setMessage(String.valueOf(v.getTag())).setPositiveButton("确定", null).show();
+    }
 }

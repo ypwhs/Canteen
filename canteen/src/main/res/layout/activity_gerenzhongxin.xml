@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E2E1E1" >
+                xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E2E1E1">
 
     <Button
         android:id="@+id/geren_pick"
@@ -12,7 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:onClick="geren_pick"
-        android:text="选择图片" />
+        android:text="选择图片"/>
 
     <ImageView
         android:id="@+id/result_image"
@@ -21,6 +21,6 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/geren_pick"
         android:background="#FFFFFF"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"/>
 
 </RelativeLayout>
