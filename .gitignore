@@ -7,3 +7,4 @@
 *.class
 /*/build/
 !/*/build/intermediates/exploded-aar/
+*.txt
