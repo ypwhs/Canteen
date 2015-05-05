@@ -136,7 +136,7 @@ public class JSONZ {
 	
 	static public void init(UUID session) throws UnknownHostException{
 		ses = session;
-		saddr = InetAddress.getByName("127.0.0.1");
+		saddr = InetAddress.getByName("bymxd.com");
 	}
 	
 	/**

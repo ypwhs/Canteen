@@ -28,6 +28,7 @@ public class ZhuCe extends Activity {
 
                 @Override
                 public void success(Data c, DataR r, Object att) {
+                    DataR asd = r;
                     System.out.println(r);
                 }
 

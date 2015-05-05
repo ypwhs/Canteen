@@ -25,12 +25,22 @@ public class MainActivity extends Activity {
             getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment()).commit();
         }
 
-        try {
-            JSONZ.init(UUIDManager.gen());
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+        Thread thread = new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                try {
+                    JSONZ.init(UUIDManager.gen());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        thread.start();
+
     }
+
+
 
     public void click(View view) {
         Intent intent = new Intent();
