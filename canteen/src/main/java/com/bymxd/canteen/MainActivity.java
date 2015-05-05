@@ -10,6 +10,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.net.UnknownHostException;
+
+import top.lizy.jsonz.client.JSONZ;
+import top.lizy.jsonz.util.UUIDManager;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -18,6 +23,12 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment()).commit();
+        }
+
+        try {
+            JSONZ.init(UUIDManager.gen());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
         }
     }
 
