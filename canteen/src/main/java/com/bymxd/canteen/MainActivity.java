@@ -10,8 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.net.UnknownHostException;
-
 import top.lizy.jsonz.client.JSONZ;
 import top.lizy.jsonz.util.UUIDManager;
 
@@ -25,7 +23,7 @@ public class MainActivity extends Activity {
             getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment()).commit();
         }
 
-        Thread thread = new Thread(){
+        Thread thread = new Thread() {
             @Override
             public void run() {
                 super.run();
@@ -41,10 +39,9 @@ public class MainActivity extends Activity {
     }
 
 
-
     public void click(View view) {
         Intent intent = new Intent();
-        intent.setClass(this, ZhuCe.class);
+        intent.setClass(this, DengLu.class);
         startActivity(intent);
     }
 

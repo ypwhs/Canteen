@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ZhuCe"
+            android:name=".DengLu"
             android:label="登录">
         </activity>
         <activity
