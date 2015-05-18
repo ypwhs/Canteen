@@ -101,15 +101,6 @@
             android:background="@drawable/gouwuche_jia"
             android:onClick="add4" />
 
-        <TextView
-            android:id="@+id/gouwuche_jiage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/gouwuche_delete"
-            android:layout_alignRight="@+id/gouwuche_delete"
-            android:layout_marginBottom="8dp"
-            android:text="￥: 25.00" />
-
         <Button
             android:id="@+id/gouwuche_delete"
             android:layout_width="36dp"
@@ -118,6 +109,15 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="16dp"
             android:background="@drawable/gouwuche_delete" />
+
+        <TextView
+            android:id="@+id/gouwuche_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/gouwuche_delete"
+            android:layout_alignRight="@+id/gouwuche_delete"
+            android:layout_marginBottom="8dp"
+            android:text="￥: 25.00" />
 
     </RelativeLayout>
 
