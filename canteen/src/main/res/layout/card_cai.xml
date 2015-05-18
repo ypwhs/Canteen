@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/cai_relativelayout"
@@ -20,7 +20,7 @@
             android:layout_centerVertical="true"
             android:background="#00000000"
             android:onClick="cai_add"
-            android:text="+"/>
+            android:text="+" />
 
         <ImageView
             android:id="@+id/cai_imageview"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/cai_button_add"
-            android:src="@drawable/food_rating_bar_full"/>
+            android:src="@drawable/food_rating_bar_full" />
 
         <TextView
             android:id="@+id/cai_name"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/cai_imageview"
             android:layout_toRightOf="@+id/cai_imageview"
-            android:text="TextView"/>
+            android:text="TextView" />
 
         <TextView
             android:id="@+id/cai_price"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/cai_name"
             android:layout_toRightOf="@+id/cai_imageview"
-            android:text="TextView"/>
+            android:text="TextView" />
 
         <ImageView
             android:id="@+id/imageView1"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/star1"/>
+            android:src="@drawable/star1" />
     </RelativeLayout>
 
     <View
@@ -63,6 +63,6 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginTop="8dp"
-        android:background="#aeaeae"/>
+        android:background="#aeaeae" />
 
 </RelativeLayout>

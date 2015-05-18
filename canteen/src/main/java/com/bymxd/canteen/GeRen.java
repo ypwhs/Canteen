@@ -14,6 +14,9 @@ import com.soundcloud.android.crop.Crop;
 
 public class GeRen extends Activity {
 
+    private Uri outputUri;
+    private ImageView resultView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +38,6 @@ public class GeRen extends Activity {
             handleCrop(resultCode, result);
         }
     }
-
-
-    private Uri outputUri;
-    private ImageView resultView;
 
     private void handleCrop(int resultCode, Intent result) {
         if (resultCode == RESULT_OK) {

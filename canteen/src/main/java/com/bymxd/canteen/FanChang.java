@@ -12,13 +12,13 @@ import android.widget.TextView;
 
 @SuppressLint("InflateParams")
 public class FanChang extends Activity {
+    int i = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fanchang);
     }
-
-    int i = 0;
 
     public void add(View view) {
         View v = LayoutInflater.from(this).inflate(R.layout.card_cai, null);

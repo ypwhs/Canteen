@@ -1,13 +1,13 @@
 package com.bymxd.canteen;
 
+import top.lizy.jsonz.client.handler.FailReason;
+import top.lizy.jsonz.data.DataR;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.Toast;
-
-import top.lizy.jsonz.client.handler.FailReason;
-import top.lizy.jsonz.data.DataR;
 
 
 /**
@@ -16,31 +16,16 @@ import top.lizy.jsonz.data.DataR;
 
 public class Common {
     static Activity thisActivity;
+    static Toast toast;
+    static String showString;
+    Handler handler = new MyHandler();
 
     Common(Activity act) {
         thisActivity = act;
     }
 
-    static Toast toast;
-    static String showString;
-
-    static class MyHandler extends Handler {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            switch (msg.what) {
-                case 1:
-                    if (toast == null) toast = Toast.makeText(thisActivity,
-                            showString, Toast.LENGTH_SHORT);
-                    else toast.setText(showString);
-                    toast.show();
-                    break;
-            }
-        }
-    }
-
-    public void solveDataR(DataR r){
-        switch(r.r){
+    public void solveDataR(DataR r) {
+        switch (r.r) {
             case DataR.PROPER:
                 show("操作成功");
                 break;
@@ -56,23 +41,21 @@ public class Common {
         }
     }
 
-    public void solveFailReason(FailReason fr){
-        if(fr==FailReason.NET){
+    public void solveFailReason(FailReason fr) {
+        if (fr == FailReason.NET) {
             show("网络错误");
-        }else if(fr==FailReason.SERVER) {
+        } else if (fr == FailReason.SERVER) {
             show("服务器错误");
-        }else if(fr==FailReason.VERSION) {
+        } else if (fr == FailReason.VERSION) {
             show("当前版本错误");
-        }else if(fr==FailReason.INTERNAL) {
+        } else if (fr == FailReason.INTERNAL) {
             show("内部错误");
-        }else if(fr==FailReason.VALIDATE) {
+        } else if (fr == FailReason.VALIDATE) {
             show("验证错误");
-        }else{
+        } else {
             show(fr.toString());
         }
     }
-
-    Handler handler = new MyHandler();
 
     public void alert(String title, String message) {
         new AlertDialog.Builder(thisActivity)
@@ -87,5 +70,20 @@ public class Common {
         Message message = new Message();
         message.what = 1;
         handler.sendMessage(message);
+    }
+
+    static class MyHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case 1:
+                    if (toast == null) toast = Toast.makeText(thisActivity,
+                            showString, Toast.LENGTH_SHORT);
+                    else toast.setText(showString);
+                    toast.show();
+                    break;
+            }
+        }
     }
 }

@@ -6,13 +6,13 @@ import top.lizy.jsonz.data.ValidateException;
 
 public class RegReq_c extends Data {
 
-	private static final long serialVersionUID = 2615727920204685412L;
+    private static final long serialVersionUID = 2615727920204685412L;
 
-	public PhoneNumber phone;
+    public PhoneNumber phone;
 
-	@Override
-	public void Validate() throws ValidateException {
-		super.Validate();
-		phone.Validate();
-	}
+    @Override
+    public void Validate() throws ValidateException {
+        super.Validate();
+        phone.Validate();
+    }
 }

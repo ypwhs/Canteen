@@ -1,5 +1,8 @@
 package com.bymxd.canteen;
 
+import top.lizy.jsonz.client.JSONZ;
+import top.lizy.jsonz.util.UUIDManager;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
@@ -9,9 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
-import top.lizy.jsonz.client.JSONZ;
-import top.lizy.jsonz.util.UUIDManager;
 
 public class MainActivity extends Activity {
 

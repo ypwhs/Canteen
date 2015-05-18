@@ -9,28 +9,26 @@ import top.lizy.jsonz.data.ValidateException;
 
 public class RegVerAns_c extends Data {
 
-	private static final long serialVersionUID = 599048405463701022L;
+    private static final long serialVersionUID = 599048405463701022L;
+    public UUID g_id;
+    public String answer;
+    /**
+     * 验证码格式为6位数字。
+     */
+    protected Pattern p_answer = Pattern.compile("^\\s*\\d{6}\\s*$");
 
-	/**
-	 * 验证码格式为6位数字。
-	 */
-	protected Pattern p_answer = Pattern.compile("^\\s*\\d{6}\\s*$");
-	
-	public UUID g_id;
-	public String answer;
-	
-	@Override
-	public void Validate() throws ValidateException {
-		super.Validate();
-		
-		if(g_id == null || answer == null)
-			throw new ValidateException("not complete");
-		
-		Matcher m = p_answer.matcher(answer);
-		if(!m.matches())
-			throw new ValidateException("code format");
-		
-		answer = answer.trim();
-	}
+    @Override
+    public void Validate() throws ValidateException {
+        super.Validate();
+
+        if (g_id == null || answer == null)
+            throw new ValidateException("not complete");
+
+        Matcher m = p_answer.matcher(answer);
+        if (!m.matches())
+            throw new ValidateException("code format");
+
+        answer = answer.trim();
+    }
 
 }
